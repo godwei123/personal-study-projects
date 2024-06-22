@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc --watch && node ./src/test/test.js"
+    "dev": "bun --watch run ./src/test/test.ts",
+    "test": "vitest"
   },
   "dependencies": {
     "@babel/core": "^7.24.7",
@@ -21,6 +22,7 @@
     "@types/babel__core": "^7.20.5",
     "@types/babel__generator": "^7.6.8",
     "@types/babel__traverse": "^7.20.6",
-    "@types/fs-extra": "^11.0.4"
+    "@types/fs-extra": "^11.0.4",
+    "vitest": "^1.6.0"
   }
 }
